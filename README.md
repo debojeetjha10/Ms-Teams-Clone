@@ -13,7 +13,10 @@ The Ms Teams Clone Made Under the MS Engage Mentorship Program 2021 By Microsoft
 <b>Three of this folders are explained below. Their file structure and what files/folder does what is writen below.
 The code is explained in the code-comments.</b>
 
-# Client
+## One can Visit the indivisual repo of these three folders and can see the entire commit history, that will give a more clear under standing of how things were made.
+
+# Client  
+## [Go to the repo](https://github.com/debojeetjha10/video-chat-application-client-side)
 ## To start go the the `*../client` 📂folder in terminal and run the command 
 ```bash
 npm start
@@ -92,6 +95,7 @@ npm start
 
 
 # peerserver
+## [Go to the repo](https://github.com/debojeetjha10/peerserver)
 ## To start go the the `*../peerserver` 📂folder in terminal and run the command 
 ```bash
 npm start
@@ -111,6 +115,7 @@ Whenever we send a req to this server with proper info it proviodes us with a pe
 >more info on can be found [here](https://github.com/peers/peerjs-server).
 
 # Video-Call
+## [Go to the repo](https://github.com/debojeetjha10/VideoChat-application)
 ## To start go the the `*../Video-Call` 📂folder in terminal and run the command 
 ```bash
 npm start
@@ -137,7 +142,7 @@ const myPeer = new Peer(undefined, {
   ]}});
 ```
 
-<mark><b>In this Code and Explanation `iceserver,stun,turn` are some keywords used. I have explained this things why we use them and what they are in this [video](https://1drv.ms/v/s!Aqiu0gLTQJGHji8VLAzz5nWOgCJF)(This onedrive page need a reload sometimes).</b> </mark>
+<mark>In this Code and Explanation `iceserver,stun,turn` are some keywords used. I have explained this things why we use them and what they are in this [video](https://1drv.ms/v/s!Aqiu0gLTQJGHji8VLAzz5nWOgCJF)(This onedrive page need a reload sometimes). </mark>
 
 ## This is the explanation of the files/folders in this folder
 
