@@ -116,7 +116,22 @@ Whenever we send a req to this server with proper info it proviodes us with a pe
 
 # Video-Call
 ## [Go to the repo](https://github.com/debojeetjha10/VideoChat-application)
-## To start go the the `*../Video-Call` 📂folder in terminal and run the command 
+## To start 
+- ### make an `env.js` 📜file in the `..*/Video-Call/DataBase` 📂folder
+- ### Make an object in the following format and export it. Your code should look like this.
+```javascript
+//This is the Mongo DataBase info
+//to connect with the Databse
+ const env  = {
+    dbName: 'your_db_name',
+    port: 'your_db_port',
+    key: 'Your_Db_key'
+
+}
+module.exports = env
+ ```
+- ### If the Databse is hosted is hosted somewhere else than azure then also change the `mongouri` variable in `..*/Video-Call/DataBase/mongo.js` 📜file
+- ### Then go the the `*../Video-Call` 📂folder in terminal and run the command 
 ```bash
 npm start
 ```
