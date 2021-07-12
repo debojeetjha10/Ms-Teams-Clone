@@ -69,7 +69,7 @@ npm start
         - 📂SideBar
             - 📜SideBar.css
             - 📜SideBar.js
-        - 📂StyleSheets
+        - 📂StyleSheets (This stores the css files that we have used repetedly in the components)
             - 📂Buttons
                 - 📜BigBlueButton.css
             - 📂Input
