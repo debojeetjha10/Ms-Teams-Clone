@@ -14,6 +14,7 @@ class MeetCreatePage extends React.Component{
 
     }
     handleChange(event){
+        //chamging the state of name using setState
         this.setState({name: event.target.value});
     }
     // redirecting to the meet page
@@ -37,4 +38,5 @@ class MeetCreatePage extends React.Component{
     }
 
 }
+// exporting the class so that we can import and use it diff files
 export default MeetCreatePage

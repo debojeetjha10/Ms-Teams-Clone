@@ -1,5 +1,7 @@
 import React from 'react'
+// using link of react-router-dom to have single-page functionality
 import { Link } from 'react-router-dom'
+//importing the neccesary css files and logos
 import './Footer.css'
 
 class Footer extends React.Component{
@@ -36,5 +38,5 @@ class Footer extends React.Component{
         )
     }
 }
-
+// exporting the class so that we can import and use it diff files
 export default Footer

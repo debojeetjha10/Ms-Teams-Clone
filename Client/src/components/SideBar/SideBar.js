@@ -10,5 +10,5 @@ class SideBar extends React.Component{
         )
     }
 }
-
+// exporting the class so that we can import and use it diff files
 export default SideBar;

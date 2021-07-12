@@ -1,5 +1,6 @@
 //this is the join-meet page
 import React from 'react'
+//importing the neccesary css files and logos
 import '../StyleSheets/MiddleCard/MiddleCard.css'
 import '../StyleSheets/Buttons/BigBlueButton.css'
 import '../StyleSheets/Input/NormalInput.css'
@@ -20,7 +21,7 @@ class JoinChat extends React.Component{
     handleRoomIdChange(roomIdChngevent){
         this.setState({roomId:roomIdChngevent.target.value})
     }
-    //on submit we wiull land on the meet page
+    //on submit we will land on the meet page
     handleSubmit(submitevent){
         window.location.replace(`https://debo-video-call.herokuapp.com/chat/${this.state.roomId}?name=${this.state.name}`);
         submitevent.preventDefault();
@@ -43,4 +44,5 @@ class JoinChat extends React.Component{
     }
 
 }
+// exporting the class so that we can import and use it diff files
 export default JoinChat

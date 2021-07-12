@@ -2,6 +2,7 @@
 import React from 'react';
 import './Navbar.css';
 import teams_logo from './icon/teams.png'
+// using link of react-router-dom to have single-page functionality
 import {Link} from 'react-router-dom'
 import usr_logo from './icon/user.png'
 class Navbar extends React.Component {
@@ -29,6 +30,7 @@ class Navbar extends React.Component {
         return false;       
       }
     handleSearchQueryChange(event){
+        //changing the search query with setState
         this.setState({searchQuery: event.target.value});
     }
     // redirecting to the meet page
@@ -60,4 +62,5 @@ class Navbar extends React.Component {
 
 
 }
+// exporting the class so that we can import and use it diff files
 export default Navbar

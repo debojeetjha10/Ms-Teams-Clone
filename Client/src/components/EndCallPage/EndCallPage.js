@@ -1,9 +1,12 @@
 //this page(box) will appear after the metting ends
 import React from 'react'
+//importing the neccesary css files and logos
 import './EndCallPage.css'
 import '../StyleSheets/MiddleCard/MiddleCard.css'
 import '../StyleSheets/Buttons/BigBlueButton.css'
+// using link of react-router-dom to have single-page functionality
 import {Link} from 'react-router-dom'
+// This page shows the End-call msg
 class EndCallPage extends React.Component{
 
     render(){
@@ -16,4 +19,5 @@ class EndCallPage extends React.Component{
     }
 
 }
+// exporting the class so that we can import and use it diff files
 export default EndCallPage

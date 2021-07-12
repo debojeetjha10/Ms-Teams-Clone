@@ -1,5 +1,6 @@
 //this is the join-meet page
 import React from 'react'
+//importing the neccesary css files and logos
 import '../StyleSheets/MiddleCard/MiddleCard.css'
 import '../StyleSheets/Buttons/BigBlueButton.css'
 import '../StyleSheets/Input/NormalInput.css'
@@ -15,9 +16,11 @@ class JoinPage extends React.Component{
     this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleNameChange(nameChngevent){
+        //chamging the state of name using setState
         this.setState({name : nameChngevent.target.value})
     }
     handleRoomIdChange(roomIdChngevent){
+        //chamging the state of roomId using setState
         this.setState({roomId:roomIdChngevent.target.value})
     }
     //on submit we will land on the meet page
@@ -43,4 +46,5 @@ class JoinPage extends React.Component{
     }
 
 }
+// exporting the class so that we can import and use it diff files
 export default JoinPage

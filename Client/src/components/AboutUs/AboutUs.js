@@ -1,5 +1,6 @@
 //this is the join-meet page
 import React from 'react'
+//importing the neccesary css files and logos
 import '../StyleSheets/MiddleCard/MiddleCard.css'
 import '../StyleSheets/Buttons/BigBlueButton.css'
 import '../StyleSheets/Input/NormalInput.css'
@@ -15,4 +16,5 @@ class AboutUs extends React.Component{
     }
 
 }
+// exporting the class so that we can import and use it diff files
 export default AboutUs

@@ -1,5 +1,7 @@
 import './App.css';
+//using Route , Switch,BrowserRouter to have single page functionality
 import {Route , Switch,BrowserRouter} from 'react-router-dom'
+// importing all the different components ,css files
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import SideBar from './components/SideBar/SideBar';
@@ -13,6 +15,8 @@ import ContactUs from './components/ContactUs/ContactUs';
 function App() {
   return (
     <div className="App">
+      {/* getting the single page functionality
+      using Route , Switch,BrowserRouter */}
       <BrowserRouter>
       <SideBar/>
       <Navbar/>
