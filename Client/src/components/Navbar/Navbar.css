@@ -1,0 +1,49 @@
+.Navbar {
+  max-height: 5vh;
+  width: 100vw;
+  min-height: 15px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+}
+.navbar-icon {
+  height: 5vh;
+}
+.navbar-icon:hover {
+  background-color: black;
+}
+.navbar-list-item {
+  height: 4vh;
+  width: auto;
+}
+.navbar-items {
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  column-gap: 1.5vw;
+  margin-right: 1rem;
+  list-style: none;
+}
+.navbar-list-item:hover {
+  background-color: blue;
+  border-radius: 1rem;
+  /* padding : 1rem 0rem 1rem 0rem; */
+  transition: auto 0.1s ease-in-out;
+}
+.user-logo {
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  height: 4vh;
+  width: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-bar {
+  margin-top: 1vh;
+  padding: 0 0 0 0;
+  height: 3.5vh;
+  border-radius: 1vh;
+  width: 30vw;
+  font-size: medium
+}

@@ -1,0 +1,6 @@
+#Join-Create-Button-Container{
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  row-gap: 4vh;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta
+  name="description"
+  content="Microsoft Teams cloned by Debojeet Jha in Microsoft engage mentorship Program 2021 organized by Microsoft UG"
+/> 
+  <!-- Getting the ROOM_ID and MY_NAME from the server  -->
+  <script>
+    const ROOM_ID = "<%= roomId %>";
+    var MY_NAME = "<%= user %>"
+    // if the server does not return any name then  get it from the user
+    // in the window prompt
+    if(MY_NAME=="" || MY_NAME=='undefined'){
+       MY_NAME = window.prompt('Enter Your Name: ');
+
+    }
+  </script>
+  <!-- Importing all the scripts -->
+  <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script  defer src="/socket.io/socket.io.js"></script>
+  <script  defer src="scripts/peer-socket-connection.js" type="text/javascript"></script>
+  <script  defer src="scripts/call-control.js" type="text/javascript"></script>
+  <script  defer src="scripts/button-control.js" type="text/javascript"></script>
+  <script defer src = 'scripts/load-chat.js'  type='text/javascript'></script>
+  <!-- Importing all the StyleSheets -->
+  <link  rel='stylesheet' href = 'style.css'/>
+  <link  rel='stylesheet' href = 'stylesheets/navbar.css'/>
+  <link  rel='stylesheet' href = 'stylesheets/main-content.css'/>
+  <link  rel='stylesheet' href = 'stylesheets/sidebar.css'/>
+  <link  rel='stylesheet' href = 'stylesheets/messages.css'/>
+  <link  rel='stylesheet' href = 'stylesheets/footer.css'/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" href="logos/teams_icon.ico" />
+  <!-- Website Title -->
+  <title>Teams Meeting || Cloned By Debojeet Jha</title>
+</head>
+<body>
+  <!-- Navbar of the website it 
+  contains the call-control buttons,teams logo ,
+  user-logo -->
+  <header id='navbar'>
+    <div id='teams-logo-container'>
+      <a href='https://example404.azurewebsites.net/'>
+
+        <img id="teams-logo" title='teams logo ' class='navbar-logo' src='logos/teams.png'  alt='Teams Logos'/>
+      </a>
+    </div>
+    <div>
+      <form onsubmit="searchOnBing">
+        <input id='search-input-box' type='text'  placeholder="search on bing with 💗" >
+        <button type='submit' id = 'search-button'> search</button>
+        
+      </form>
+    </div>
+    <div class='navbar-logo-left'>
+      <div class="navbar-logo-container">
+        <img id="copy-roomId-button" class='navbar-logo ' src='logos/chain.png'  title='Copy Room Id' alt='Button'/>
+      </div>
+      <div class="navbar-logo-container">
+        <img id="mute-button" class='navbar-logo ' src='logos/unmute.png'  title='press to mute' alt='Button'/>
+      </div>
+      <div class="navbar-logo-container">
+        <img id="video-on-off-button" class='navbar-logo' src='logos/video-on.png'   title='press to turn off video' alt='Button'/>
+      </div>
+      <div class="navbar-logo-container">
+        <img id="call-end-button" class='navbar-logo' src='logos/phone-call-end.png' title="press here to end-call" alt='Button'/>
+      </div>
+      <div class="navbar-logo-container">
+        <img id="user-logo" class='navbar-logo' src='logos/user.png'  title='user-logo' alt='Button'/>
+      </div>
+    </div>
+  </header>
+  <!-- This is the Sidebar 
+  contains the clock and the calender button  -->
+  <sidebar>
+    <div id="sidebar">
+      <div id='calender-clock-container'>
+        <div id="calender-img-container" class="sidebar-img-container">
+          <img id='calender-img' class='sidebar-img' src='logos/calender.png' alt='calender' title='calender'>
+        </div>
+        <div id="clock-img-container" class="sidebar-img-container">
+          <img id='clock-img' class='sidebar-img' src='logos/clock.png' alt='clock' title='clock'>
+        </div>
+      </div>
+    </div>
+  </sidebar>
+  <!-- This is the main panel contains the main-content(video-grid and message panel) -->
+  <main id="main-pannel">
+    <div class="video-container">
+      <!-- this is the video grid -->
+      <div id="video-grid"></div>
+    </div>
+  <!-- This is the entire message panel it contains all the things
+  of the messaging functionality
+  except the scripts the script is with the peer-socket-connection.js file imported in the head -->
+  <div class="msg-pannel">
+    <div class="msg-header">
+       <h5>Chat-Box</h5>
+       <hr/>
+    </div>
+    <div id="main-chat-window">
+       <ul id="messages">
+       </ul>
+    </div>
+    <div class="main-message-container">
+       <input id="chat-message" type="text" placeholder="Type message here...">
+    </div>
+  </main>
+ <!-- This iframe contains the calender its display bis controlled by
+ the calender button in the sidebar -->
+<iframe id='google-calender' class = "w3-animate-opacity"src="https://calendar.google.com/calendar/embed?src=0osbnpsm0bj4j8lhmq5k7edf58%40group.calendar.google.com&ctz=Asia%2FKolkata" ></iframe>
+<!-- this is the footer   -->
+<!-- this div contains the clock it is got from https://www.zeitverschiebung.net/en/clock-widget -->
+<div id='clock' style="text-align:center;padding:1em 0;background-color: white;display: none;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/country/in"><span style="color:gray;">Current local time in</span><br />India</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKolkata" width="100%" height="115" frameborder="0" seamless></iframe> </div>
+<footer></footer>
+<!-- loading the previous chats -->
+
+</body>
+</html>

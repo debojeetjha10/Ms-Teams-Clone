@@ -1,0 +1,18 @@
+.SideBar{
+    position: fixed;
+    background-color: rgb(43, 39, 39);
+    width: 2vw;
+    top:5vh;
+    bottom: 2vh;
+    height: 93vh;    
+    color:white;
+}
+.SideBar-items{
+    /* display: grid;
+    position: fixed;
+    left: 0;
+    grid-template-columns: 1;
+    list-style: none;
+    word-wrap: inherit; */
+    
+}

@@ -1,0 +1,18 @@
+#JoinPage-Heading {
+  font-size: larger;
+  color: blueviolet;
+  padding-top: 2vh;
+}
+#JoinPage-Button {
+  margin-top: 10vh;
+  padding-bottom: 2vh;
+}
+#form-container {
+  margin-top: 10vh;
+}
+#name-roomId-form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 2vh;
+}
+

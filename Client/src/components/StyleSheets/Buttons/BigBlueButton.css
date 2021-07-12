@@ -1,0 +1,11 @@
+.Big-Blue-Button {
+  background-color: blue;
+  width: 12vw;
+  height: 5vh;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  padding-top: 3px;
+}

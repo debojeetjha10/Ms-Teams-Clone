@@ -1,0 +1,45 @@
+#sidebar{
+    position:fixed;
+    top:5vh;
+    left:0;
+    width: 3vw;
+    background-color: #242324;;
+    height: 95vh;
+    z-index: 1;
+  }
+  .sidebar-img-container{
+    width:2.5vw;
+    height: 3vw;
+  }
+  .sidebar-img{
+    width: 2.5vw;
+    height: auto;
+  }
+  #calender-img{
+    margin-top: 1vh;
+  }
+  #clock-img{
+    margin-top: 2vh;
+  }
+  .sidebar-img:active{
+    width:2vw;
+    height:auto;
+    transition: all 0.2s ease-in-out;
+  }
+  #clock{
+    position: fixed;
+    top:8vh;
+    left:4vw;
+  }
+  #google-calender{
+    display: none;
+    position: fixed;
+    top:8vh;
+    left:4vw;
+    width: 40vw;
+    height: 60vh;
+    border:solid 2px blue;
+    border-radius: 4px;
+    box-shadow: blue;
+  }
+  

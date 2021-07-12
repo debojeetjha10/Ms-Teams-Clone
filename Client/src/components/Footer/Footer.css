@@ -1,0 +1,20 @@
+.Footer{
+    background-color: rgb(39, 37, 37);
+    color:white;
+    height:2vh;
+    position: fixed;
+    width:100vw;
+    bottom:0;
+    display: flex;
+}
+.Footer-list{
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    list-style: none;
+    column-gap: 10px;
+}
+.Footer-links{
+    color:white;
+    text-decoration: none;
+}

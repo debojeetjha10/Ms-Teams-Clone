@@ -1,0 +1,30 @@
+#navbar{
+    height: 5vh;
+    width:100vw;
+    background-color: blueviolet;
+    position:fixed;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-logo{
+    height: 5vh;
+  }
+  .navbar-logo-left{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    margin-right: 1vw;
+    column-gap: 0.2vw;
+  }
+  .navbar-logo:active{
+      background-color:rgb(107, 7, 69) ;
+      transition: all 0.1s ;
+  }
+  #search-input-box{
+    width: 20vw;
+    margin-top: 1vh;
+    font-size: medium;
+    padding: 0.2vh;
+    border-radius: 1vh;
+
+  }

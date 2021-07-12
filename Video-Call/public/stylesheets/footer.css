@@ -1,0 +1,8 @@
+footer{
+    height: 0.2vh;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: blueviolet;
+    z-index: 10;
+  }
